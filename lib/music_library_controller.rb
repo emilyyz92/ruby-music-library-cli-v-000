@@ -30,12 +30,12 @@ class MusicLibraryController
     end
   end
 
-  def list_artists
-    artist_array = Song.all.sort{|a,b| a.artist.name <=> b.artist.name}.map {|s| s.artist.name}
-    artist_array.uniq.each.with_index(1) do |a, i|
-      puts "#{i}. #{a}"
-    end
-  end
+  # def list_artists
+  #   artist_array = Song.all.sort{|a,b| a.artist.name <=> b.artist.name}.map {|s| s.artist.name}
+  #   artist_array.uniq.each.with_index(1) do |a, i|
+  #     puts "#{i}. #{a}"
+  #   end
+  # end
 
   def list_genres
     genre_array = Song.all.sort{|a,b| a.genre.name <=> b.genre.name}.map {|s|s.genre.name}
