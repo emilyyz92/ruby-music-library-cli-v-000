@@ -18,9 +18,9 @@ class MusicLibraryController
     puts "To quit, type 'exit'."
     puts "What would you like to do?"
 
-    input = gets.strip
+    input = 0
     until input == "exit"
-      input
+      input = gets.strip
     end
 
     case input
