@@ -19,6 +19,7 @@ class MusicLibraryController
     puts "What would you like to do?"
 
     input = gets.strip
+    until input == "exit"
 
     case input
     when "list songs"
