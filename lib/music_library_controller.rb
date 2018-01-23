@@ -74,6 +74,6 @@ class MusicLibraryController
       puts "Playing #{song.name} by #{song.artist.name} in the directory."
     end
 
-  end
+  end 
 
 end
