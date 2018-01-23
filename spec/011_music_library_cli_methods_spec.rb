@@ -36,7 +36,7 @@ describe "CLI Methods" do
     end
 
     it "is not hard-coded" do
-      
+
 
       expect($stdout).to receive(:puts).with("1. Alpha 9")
       expect($stdout).to receive(:puts).with("2. Bob Dylan")
